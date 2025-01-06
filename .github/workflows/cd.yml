@@ -34,3 +34,6 @@ jobs:
 
             - name: "Use gcloud CLI"
               run: "gcloud info"
+
+            - name: "Build, tag, and push image to Google Container Registry"
+              run: "gcloud builds submit --tag us-central1-docker.pkg.dev/notely-thihxm/notely-ar-repo/notely:latest ."
